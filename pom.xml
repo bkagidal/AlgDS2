@@ -2,12 +2,12 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>AlgDS1</groupId>
-  <artifactId>AlgDS1</artifactId>
+  <groupId>AlgDS2</groupId>
+  <artifactId>AlgDS2</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>AlgDS1</name>
+  <name>AlgDS2</name>
   <url>http://maven.apache.org</url>
 
   <properties>
