@@ -6,6 +6,7 @@ import java.util.List;
 public class Trie {
 
 	private Node root;
+	private int sigleChldIndex;
 
 	public Trie() {
 		this.root = new Node("");
@@ -129,6 +130,31 @@ public class Trie {
 			collect(childNode, pre + str, allwords);
 
 		}
+	}
+
+	public String longestCommenPrefix() {
+
+		Node tempNode = root;
+		String lcp = "";
+
+		while (CountNoOfChildren(tempNode) == 1 && !tempNode.isLeaf()) {
+			tempNode = tempNode.getChild(sigleChldIndex);
+			lcp = lcp + String.valueOf((char)(sigleChldIndex + 'a'));
+		}
+		return lcp;
+	}
+
+	private int CountNoOfChildren(Node node) {
+
+		int noofchilds = 0;
+
+		for (int i = 0; i < node.getChildNodes().length; i++) {
+			if (node.getChild(i) != null) {
+				noofchilds++;
+				sigleChldIndex = i;
+			}
+		}
+		return noofchilds;
 	}
 
 }
