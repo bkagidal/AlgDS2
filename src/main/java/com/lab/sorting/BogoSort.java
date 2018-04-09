@@ -1,6 +1,6 @@
-package com.lab.sort.bogo;
+package com.lab.sorting;
 
-public class App {
+public class BogoSort {
 	
 	public static void main(String[] args) {
 		
